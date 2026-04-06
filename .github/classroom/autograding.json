@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Test 1 - Provided Example",
+      "setup": "javac src/Main.java",
+      "run": "java -cp src Main",
+      "input": "3\nMilk Bread Eggs\nBread",
+      "output": "Sorted Items: [Bread, Eggs, Milk]\nFound",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test 2 - Item Not Found",
+      "setup": "javac src/Main.java",
+      "run": "java -cp src Main",
+      "input": "4\nZebra Apple Monkey Dog\nCat",
+      "output": "Sorted Items: [Apple, Dog, Monkey, Zebra]\nNot Found",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    },
+    {
+      "name": "Test 3 - Duplicate Items",
+      "setup": "javac src/Main.java",
+      "run": "java -cp src Main",
+      "input": "5\nPen Pencil Eraser Pencil Marker\nEraser",
+      "output": "Sorted Items: [Eraser, Marker, Pen, Pencil, Pencil]\nFound",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 10
+    }
+  ]
+}
